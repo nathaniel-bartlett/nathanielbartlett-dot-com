@@ -1,11 +1,10 @@
-/* release 1.0 on 10-30-17 */
-
 body, html{
   margin:0;
   padding:0;
   font-family: 'Ubuntu Mono';
   height: 100%;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+  background-color: #ffffff;
 }
 
 .maxWidth1200 {
