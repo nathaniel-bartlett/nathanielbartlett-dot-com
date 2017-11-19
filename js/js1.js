@@ -886,6 +886,8 @@ function timeUpdate() {
 
 function launchAudio(fileNumber) {
 
+  audio.pause();
+
   newFileLoaded = 1;
   dotPressPlayBlock = 0;
   currentFileLoaded = fileNumber;
@@ -900,7 +902,7 @@ function launchAudio(fileNumber) {
   audio.src = audioFiles[fileNumber].file;
   audio.volume = 0;
   nowPlaying.innerHTML = '' + audioFiles[fileNumber].title + ' <span class="discDuration">' + audioFiles[fileNumber].duration + '</span>';
-  audio.load();
+  //audio.load();
 
   var numberOfDots = audioFiles[fileNumber].dots;
   dotsOuter.innerHTML = '';
@@ -915,6 +917,7 @@ function launchAudio(fileNumber) {
   setCurrentDot(audioFiles[fileNumber].start / 10);
   playAudioPlayer.innerHTML = '<i class="fa fa-pause-circle playerButtons" aria-hidden="true"></i>';
   maxPlayerArea();
+  audio.load();
 
   for (var i = 0; i < dotsOuter.children.length; i++) {
 
@@ -946,14 +949,29 @@ audio.onseeked = function() {
     audioPlayerClock.innerHTML = calculateCurrentValue(audio.currentTime);
 };
 
+/*
 audio.addEventListener("canplaythrough", canPlayThrough, false);
 
 function canPlayThrough() {
   if(dotPressPlayBlock == 0) {
     audio.play();
     playAudioPlayer.classList.add('audioIsPlaying');
+    console.log("ready!");
   }
 }
+*/
+
+audio.addEventListener('loadeddata', function() {
+
+  if(audio.readyState >= 2) {
+    if(dotPressPlayBlock == 0) {
+      audio.play();
+      playAudioPlayer.classList.add('audioIsPlaying');
+      //console.log("ready!");
+    }
+  }
+  //console.log(audio.readyState);
+});
 
 function closeAudio() {
   audio.pause();
