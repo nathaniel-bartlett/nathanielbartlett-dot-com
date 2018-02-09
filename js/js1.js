@@ -827,6 +827,14 @@ var audioFiles = [
     start: 0,
     duration: "26:22",
     title: "The Midday"
+  },
+  // 28
+  {
+    file: "audio/mp3/interviews/01-30-18_WORT_Interivew.mp3",
+    dots: 261,
+    start: 0,
+    duration: "43:29",
+    title: "Back Porch Serenade"
   }
 ];
 
