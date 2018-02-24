@@ -842,6 +842,10 @@ body, html{
 ///////////////////////////////////////////////////////////
 */
 
+.units {
+  text-transform: none;
+}
+
 .topPad40px {
   padding-top: 40px;
 }
