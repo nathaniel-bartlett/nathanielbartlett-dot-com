@@ -8,6 +8,8 @@ var dogEarNav = document.getElementById("dogEarNav");
 var menuIcons = document.getElementById("menuIcons");
 var navList = document.getElementById("nav-list");
 var navShade = document.getElementById("navShade");
+var firstMenuButton = document.getElementById("firstMenuButton");
+var menuContainer = document.getElementById("menu-container");
 
 dogEarNav.style.height = "0%";
 
@@ -41,6 +43,7 @@ function openNav() {
   dogEarNav.style.overflowY = "auto";
   navShade.style.width = "100%";
   navShade.style.height = "100%";
+  centerMenuButtons();
 }
 
 function closeNav() {
@@ -67,11 +70,29 @@ function menuResize() {
   }
 }
 
+//
+// Center the menu buttons
+//
+window.addEventListener("resize", centerMenuButtons);
+
+// centerMenuButtons();
+
+function centerMenuButtons() {
+  var menuButtonWidth = firstMenuButton.getBoundingClientRect().width;
+  var marLeftNavList = ((menuContainer.getBoundingClientRect().width) % menuButtonWidth) / 2;
+  navList.style.marginLeft = Math.round(marLeftNavList) + "px";
+}
+
+//
+//
+//
+
 /////////////////////////////////////////////////
 // JUMP TO ////////////////////////////////////
 /////////////////////////////////////////////////
 
 function navJump(whereTo) {
+  // centerMenuButtons();
   if(whereTo == 'top') {
     closeNav();
     window.scrollTo(0,0);
