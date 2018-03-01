@@ -13,24 +13,6 @@ var menuContainer = document.getElementById("menu-container");
 
 dogEarNav.style.height = "0%";
 
-//
-//
-//
-var audioPrimeGate = 0;
-window.onscroll = primeAudio;
-window.onclick = primeAudio;
-
-function primeAudio() {
-  if(audioPrimeGate == 0) {
-    audio.src = audioFiles[29].file;
-    audioPrimeGate += 1;
-  }
-}
-
-//
-//
-//
-
 function openNav() {
   dogEarNav.style.transition = "height 0.0s linear";
   dogEarNav.style.height = Math.round(navList.getBoundingClientRect().height) + "px";
@@ -75,24 +57,17 @@ function menuResize() {
 //
 window.addEventListener("resize", centerMenuButtons);
 
-// centerMenuButtons();
-
 function centerMenuButtons() {
   var menuButtonWidth = firstMenuButton.getBoundingClientRect().width;
   var marLeftNavList = ((menuContainer.getBoundingClientRect().width) % menuButtonWidth) / 2;
   navList.style.marginLeft = Math.round(marLeftNavList) + "px";
 }
 
-//
-//
-//
-
 /////////////////////////////////////////////////
 // JUMP TO ////////////////////////////////////
 /////////////////////////////////////////////////
 
 function navJump(whereTo) {
-  // centerMenuButtons();
   if(whereTo == 'top') {
     closeNav();
     window.scrollTo(0,0);
@@ -897,7 +872,6 @@ audio.addEventListener("timeupdate", timeUpdate, false);
 
 // Long files (40min+) are having touble loading if chosen first.
 // If a shorter file is played first, then the longer files will play
-// This is the curent work-around
 
 function onEnded() {
   var audioDotInnerBack = document.getElementsByClassName("audioDotInnerBack");
@@ -943,13 +917,13 @@ function timeUpdate() {
 }
 
 function launchAudio(fileNumber) {
+  // console.log('longAudio()');
+  var audioDelay;
 
-  audio.pause();
-
-  newFileLoaded = 1;
-  dotPressPlayBlock = 0;
-  currentFileLoaded = fileNumber;
-  blockWhileLoading = 0;
+  audio.volume = 0.5;
+  audio.src = audioFiles[29].file;
+  audio.play();
+  audioDelay = setTimeout(function(){ launchAudioNext(fileNumber); }, 200);
 
   audioPlayerClock.innerHTML = 'LOADING';
 
@@ -957,10 +931,7 @@ function launchAudio(fileNumber) {
     playAudioPlayer.classList.remove('audioIsPlaying');
   }
 
-  audio.src = audioFiles[fileNumber].file;
-  audio.volume = 0;
   nowPlaying.innerHTML = '' + audioFiles[fileNumber].title + ' <span class="discDuration">' + audioFiles[fileNumber].duration + '</span>';
-  //audio.load();
 
   var numberOfDots = audioFiles[fileNumber].dots;
   dotsOuter.innerHTML = '';
@@ -969,12 +940,25 @@ function launchAudio(fileNumber) {
     dotsOuter.innerHTML += '<div class="audioDotOutter"><div class="audioDotInner"><div class="audioDotInnerBack"></div></div></div>';
   }
 
-  var audioDotInnerBack = document.getElementsByClassName("audioDotInnerBack");
-
-
   setCurrentDot(audioFiles[fileNumber].start / 10);
   playAudioPlayer.innerHTML = '<i class="fa fa-pause-circle playerButtons" aria-hidden="true"></i>';
   maxPlayerArea();
+}
+
+function launchAudioNext(fileNumber) {
+  // console.log('launchAudio()');
+  audio.pause();
+
+  newFileLoaded = 1;
+  dotPressPlayBlock = 0;
+  currentFileLoaded = fileNumber;
+  blockWhileLoading = 0;
+
+  audio.src = audioFiles[fileNumber].file;
+  audio.volume = 0;
+
+  var audioDotInnerBack = document.getElementsByClassName("audioDotInnerBack");
+
   audio.load();
 
   for (var i = 0; i < dotsOuter.children.length; i++) {
@@ -1007,28 +991,14 @@ audio.onseeked = function() {
     audioPlayerClock.innerHTML = calculateCurrentValue(audio.currentTime);
 };
 
-/*
-audio.addEventListener("canplaythrough", canPlayThrough, false);
-
-function canPlayThrough() {
-  if(dotPressPlayBlock == 0) {
-    audio.play();
-    playAudioPlayer.classList.add('audioIsPlaying');
-    console.log("ready!");
-  }
-}
-*/
-
 audio.addEventListener('loadeddata', function() {
 
   if(audio.readyState >= 2) {
     if(dotPressPlayBlock == 0) {
       audio.play();
       playAudioPlayer.classList.add('audioIsPlaying');
-      //console.log("ready!");
     }
   }
-  //console.log(audio.readyState);
 });
 
 function closeAudio() {
@@ -1144,7 +1114,3 @@ function logoPosition() {
     //console.log("Y");
   }
 }
-/*
-var loadingScreen = document.getElementById("loadingScreen");
-loadingScreen.style.display = 'none';
-*/
