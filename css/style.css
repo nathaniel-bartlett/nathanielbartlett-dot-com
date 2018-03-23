@@ -98,6 +98,7 @@ body, html{
   padding: 5px;
   color: #ffffff;
   background-color: #000000;
+  font-weight: bold;
 }
 
 /*
@@ -744,6 +745,7 @@ body, html{
   padding-right: 2px;
   float: right;
   left: 2px;
+  font-weight: bold;
 }
 
 /* to calculate margin corectly */
@@ -762,6 +764,7 @@ body, html{
   margin-left: auto;
   margin-right: auto;
   font-size: 17px;
+  font-weight: bold;
   line-height: 21px;
   text-align: center;
 }

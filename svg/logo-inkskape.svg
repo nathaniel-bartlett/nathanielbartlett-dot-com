@@ -26,10 +26,10 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="333.65083"
-     inkscape:cy="232.40908"
+     inkscape:cx="187.93654"
+     inkscape:cy="213.83765"
      inkscape:document-units="px"
-     inkscape:current-layer="g4174"
+     inkscape:current-layer="g4237"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="978"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -160,7 +160,331 @@
     </g>
   </g>
   <g
-     style="display:inline"
+     style="display:none"
+     transform="translate(-91.349172,-392.53048)"
+     id="g4215"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1 bold non path">
+    <g
+       transform="translate(-98.095018,-84.559303)"
+       id="g4217" />
+    <g
+       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-340.67585,504.23879)"
+       id="g4219">
+      <rect
+         y="630.94006"
+         x="335.29562"
+         height="47.477173"
+         width="365.29016"
+         id="rect4221"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="517.5282"
+         y="671.72864"
+         id="text4223"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4225"
+           x="517.5282"
+           y="671.72864"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle">SOUND-SPACE</tspan></text>
+      <rect
+         y="719.27368"
+         x="488.83878"
+         height="47.477173"
+         width="211.74698"
+         id="rect4227"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="595.23474"
+         y="760.06226"
+         id="text4229"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4231"
+           x="595.23474"
+           y="760.06226"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle">AUDIO</tspan></text>
+      <rect
+         y="807.60736"
+         x="551.7641"
+         height="47.477173"
+         width="148.82167"
+         id="rect4233"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="625.01996"
+         y="848.396"
+         id="text4235"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4237"
+           x="625.01996"
+           y="848.396"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle">LAB</tspan></text>
+      <rect
+         y="542.60638"
+         x="69.625465"
+         height="47.477173"
+         width="630.96033"
+         id="rect4239"
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         id="g4241"
+         transform="translate(-21.20875,-34.737003)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="372.64484"
+           y="618.13196"
+           id="text4243"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4245"
+             x="372.64484"
+             y="618.13196"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle">NATHANIEL BARTLETT</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text4247"
+           y="612.42944"
+           x="665.20642"
+           style="font-style:normal;font-weight:normal;font-size:43.69346237px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.5px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             y="612.42944"
+             x="665.20642"
+             id="tspan4249"
+             sodipodi:role="line">//</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:label="Layer 1 bold non path copy"
+     inkscape:groupmode="layer"
+     id="g4233"
+     transform="translate(-91.349172,-392.53048)"
+     style="display:inline">
+    <g
+       id="g4235"
+       transform="translate(-98.095018,-84.559303)" />
+    <g
+       id="g4237"
+       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-340.67585,504.23879)">
+      <rect
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4240"
+         width="365.29016"
+         height="47.477173"
+         x="335.29562"
+         y="630.94006" />
+      <g
+         style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text4242">
+        <path
+           d="m 379.0382,666.77864 q 1.705,0 2.805,-0.33 1.155,-0.385 1.815,-0.99 0.66,-0.66 0.88,-1.43 0.275,-0.825 0.275,-1.65 0,-1.045 -0.605,-1.87 -0.605,-0.825 -1.54,-1.43 -0.935,-0.66 -2.09,-1.155 -1.155,-0.55 -2.31,-0.99 -1.54,-0.55 -3.19,-1.265 -1.65,-0.715 -3.025,-1.815 -1.32,-1.1 -2.2,-2.695 -0.88,-1.65 -0.88,-4.07 0,-4.785 3.08,-7.48 3.135,-2.695 8.58,-2.695 3.135,0 5.445,0.715 2.365,0.715 3.96,1.595 l -1.98,5.225 q -1.375,-0.77 -3.08,-1.32 -1.65,-0.55 -3.85,-0.55 -5.39,0 -5.39,3.905 0,0.99 0.55,1.76 0.55,0.715 1.375,1.32 0.88,0.55 1.925,0.99 1.1,0.44 2.145,0.825 1.595,0.605 3.3,1.375 1.76,0.715 3.19,1.98 1.485,1.21 2.42,3.08 0.935,1.815 0.935,4.62 0,4.785 -3.135,7.425 -3.08,2.585 -9.405,2.585 -4.235,0 -6.765,-0.88 -2.53,-0.935 -3.795,-1.705 l 1.98,-5.5 q 1.485,0.88 3.52,1.65 2.09,0.77 5.06,0.77 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4314" />
+        <path
+           d="m 402.1382,654.67864 q 0,2.475 0.165,4.675 0.22,2.145 0.77,3.74 0.605,1.595 1.65,2.53 1.045,0.935 2.805,0.935 1.705,0 2.75,-0.935 1.1,-0.935 1.65,-2.53 0.605,-1.65 0.77,-3.795 0.22,-2.145 0.22,-4.62 0,-2.475 -0.22,-4.62 -0.165,-2.2 -0.77,-3.795 -0.55,-1.595 -1.595,-2.53 -1.045,-0.935 -2.805,-0.935 -1.76,0 -2.805,0.935 -1.045,0.935 -1.65,2.585 -0.55,1.595 -0.77,3.74 -0.165,2.145 -0.165,4.62 z m -6.875,0 q 0,-8.8 3.245,-13.255 3.245,-4.51 9.02,-4.51 5.995,0 9.13,4.51 3.135,4.455 3.135,13.255 0,8.8 -3.19,13.31 -3.19,4.455 -9.02,4.455 -5.995,0 -9.185,-4.455 -3.135,-4.51 -3.135,-13.31 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4316" />
+        <path
+           d="m 434.9182,672.44364 q -3.3,0 -5.555,-0.88 -2.2,-0.935 -3.52,-2.64 -1.32,-1.705 -1.87,-4.125 -0.55,-2.42 -0.55,-5.39 l 0,-21.725 6.82,0 0,21.285 q 0,2.145 0.22,3.63 0.22,1.43 0.715,2.31 0.55,0.88 1.485,1.265 0.935,0.385 2.365,0.385 1.43,0 2.365,-0.385 0.935,-0.385 1.485,-1.265 0.55,-0.935 0.77,-2.365 0.22,-1.485 0.22,-3.63 l 0,-21.23 6.765,0 0,21.725 q 0,2.97 -0.55,5.39 -0.55,2.42 -1.925,4.125 -1.375,1.705 -3.63,2.64 -2.255,0.88 -5.61,0.88 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4318" />
+        <path
+           d="m 468.3032,671.72864 q -2.31,-5.665 -5.06,-11.275 -2.695,-5.665 -5.83,-11.33 l 0,22.605 -6.105,0 0,-34.045 5.445,0 q 1.54,2.42 3.08,5.28 1.54,2.805 2.97,5.61 1.485,2.805 2.695,5.445 1.265,2.64 2.145,4.62 l 0,-20.955 6.105,0 0,34.045 -5.445,0 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4320" />
+        <path
+           d="m 486.0132,666.22864 q 0.275,0.055 0.605,0.055 0.33,0 0.605,0 2.31,0 3.85,-0.88 1.595,-0.88 2.53,-2.42 0.99,-1.54 1.375,-3.63 0.44,-2.145 0.44,-4.675 0,-2.2 -0.33,-4.29 -0.33,-2.09 -1.155,-3.685 -0.825,-1.595 -2.255,-2.53 -1.43,-0.99 -3.685,-0.99 -0.44,0 -0.99,0.055 -0.55,0 -0.99,0.11 l 0,22.88 z m 16.28,-11.55 q 0,4.73 -1.21,8.085 -1.155,3.3 -3.245,5.39 -2.09,2.09 -5.005,3.08 -2.86,0.935 -6.325,0.935 -1.815,0 -3.575,-0.22 -1.705,-0.165 -3.685,-0.605 l 0,-33.22 q 2.31,-0.495 4.345,-0.66 2.035,-0.165 3.795,-0.165 3.355,0 6.105,0.99 2.805,0.99 4.73,3.135 1.925,2.09 2.97,5.39 1.1,3.245 1.1,7.865 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4322" />
+        <path
+           d="m 509.9932,654.29364 15.07,0 0,6.655 -15.07,0 0,-6.655 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4324" />
+        <path
+           d="m 544.0382,666.77864 q 1.705,0 2.805,-0.33 1.155,-0.385 1.815,-0.99 0.66,-0.66 0.88,-1.43 0.275,-0.825 0.275,-1.65 0,-1.045 -0.605,-1.87 -0.605,-0.825 -1.54,-1.43 -0.935,-0.66 -2.09,-1.155 -1.155,-0.55 -2.31,-0.99 -1.54,-0.55 -3.19,-1.265 -1.65,-0.715 -3.025,-1.815 -1.32,-1.1 -2.2,-2.695 -0.88,-1.65 -0.88,-4.07 0,-4.785 3.08,-7.48 3.135,-2.695 8.58,-2.695 3.135,0 5.445,0.715 2.365,0.715 3.96,1.595 l -1.98,5.225 q -1.375,-0.77 -3.08,-1.32 -1.65,-0.55 -3.85,-0.55 -5.39,0 -5.39,3.905 0,0.99 0.55,1.76 0.55,0.715 1.375,1.32 0.88,0.55 1.925,0.99 1.1,0.44 2.145,0.825 1.595,0.605 3.3,1.375 1.76,0.715 3.19,1.98 1.485,1.21 2.42,3.08 0.935,1.815 0.935,4.62 0,4.785 -3.135,7.425 -3.08,2.585 -9.405,2.585 -4.235,0 -6.765,-0.88 -2.53,-0.935 -3.795,-1.705 l 1.98,-5.5 q 1.485,0.88 3.52,1.65 2.09,0.77 5.06,0.77 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4326" />
+        <path
+           d="m 571.0982,637.29864 q 6.49,0 10.065,2.695 3.575,2.64 3.575,8.69 0,6.105 -3.63,8.855 -3.575,2.695 -10.175,2.695 l -2.42,0 0,11.495 -6.765,0 0,-33.605 q 0.99,-0.22 2.2,-0.385 1.265,-0.165 2.53,-0.22 1.265,-0.11 2.475,-0.165 1.21,-0.055 2.145,-0.055 z m 0.77,5.885 q -0.605,0 -1.705,0.055 -1.045,0 -1.65,0.11 l 0,11 2.75,0 q 3.245,0 4.895,-1.265 1.65,-1.32 1.65,-4.455 0,-2.97 -1.65,-4.18 -1.595,-1.265 -4.29,-1.265 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4328" />
+        <path
+           d="m 606.0232,671.72864 -1.595,-7.865 -9.075,0 -1.54,7.865 -7.04,0 q 2.42,-10.065 4.895,-18.315 2.475,-8.305 4.785,-15.73 l 7.37,0 q 2.42,7.48 4.785,15.895 2.42,8.36 4.675,18.15 l -7.26,0 z m -6.05,-27.445 q -0.55,1.925 -1.045,3.685 -0.44,1.705 -0.88,3.41 -0.385,1.65 -0.77,3.355 -0.33,1.705 -0.66,3.52 l 6.655,0 q -0.33,-1.815 -0.66,-3.52 -0.33,-1.705 -0.77,-3.355 -0.385,-1.705 -0.88,-3.41 -0.44,-1.76 -0.99,-3.685 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4330" />
+        <path
+           d="m 630.0582,672.44364 q -7.205,0 -11,-4.62 -3.795,-4.62 -3.795,-13.145 0,-4.235 1.155,-7.535 1.155,-3.3 3.19,-5.555 2.09,-2.31 4.895,-3.465 2.86,-1.21 6.215,-1.21 1.815,0 3.245,0.33 1.485,0.275 2.585,0.66 1.1,0.385 1.815,0.825 0.77,0.44 1.155,0.66 l -1.76,5.39 q -1.265,-0.825 -3.08,-1.375 -1.76,-0.605 -4.07,-0.605 -1.595,0 -3.135,0.605 -1.485,0.55 -2.695,1.925 -1.155,1.32 -1.925,3.575 -0.715,2.255 -0.715,5.61 0,5.83 1.98,8.965 2.035,3.08 6.6,3.08 2.64,0 4.345,-0.605 1.76,-0.605 2.805,-1.21 l 1.705,5.335 q -1.43,0.88 -3.905,1.65 -2.42,0.715 -5.61,0.715 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4332" />
+        <path
+           d="m 644.7432,671.72864 0,-34.045 20.625,0 0,5.61 -13.86,0 0,7.645 12.045,0 0,5.61 -12.045,0 0,9.57 15.07,0 0,5.61 -21.835,0 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4334" />
+      </g>
+      <rect
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4246"
+         width="211.74698"
+         height="47.477173"
+         x="488.83878"
+         y="719.27368" />
+      <g
+         style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text4248">
+        <path
+           d="m 546.22974,760.06226 -1.595,-7.865 -9.075,0 -1.54,7.865 -7.04,0 q 2.42,-10.065 4.895,-18.315 2.475,-8.305 4.785,-15.73 l 7.37,0 q 2.42,7.48 4.785,15.895 2.42,8.36 4.675,18.15 l -7.26,0 z m -6.05,-27.445 q -0.55,1.925 -1.045,3.685 -0.44,1.705 -0.88,3.41 -0.385,1.65 -0.77,3.355 -0.33,1.705 -0.66,3.52 l 6.655,0 q -0.33,-1.815 -0.66,-3.52 -0.33,-1.705 -0.77,-3.355 -0.385,-1.705 -0.88,-3.41 -0.44,-1.76 -0.99,-3.685 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4337" />
+        <path
+           d="m 567.62474,760.77726 q -3.3,0 -5.555,-0.88 -2.2,-0.935 -3.52,-2.64 -1.32,-1.705 -1.87,-4.125 -0.55,-2.42 -0.55,-5.39 l 0,-21.725 6.82,0 0,21.285 q 0,2.145 0.22,3.63 0.22,1.43 0.715,2.31 0.55,0.88 1.485,1.265 0.935,0.385 2.365,0.385 1.43,0 2.365,-0.385 0.935,-0.385 1.485,-1.265 0.55,-0.935 0.77,-2.365 0.22,-1.485 0.22,-3.63 l 0,-21.23 6.765,0 0,21.725 q 0,2.97 -0.55,5.39 -0.55,2.42 -1.925,4.125 -1.375,1.705 -3.63,2.64 -2.255,0.88 -5.61,0.88 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4339" />
+        <path
+           d="m 591.21974,754.56226 q 0.275,0.055 0.605,0.055 0.33,0 0.605,0 2.31,0 3.85,-0.88 1.595,-0.88 2.53,-2.42 0.99,-1.54 1.375,-3.63 0.44,-2.145 0.44,-4.675 0,-2.2 -0.33,-4.29 -0.33,-2.09 -1.155,-3.685 -0.825,-1.595 -2.255,-2.53 -1.43,-0.99 -3.685,-0.99 -0.44,0 -0.99,0.055 -0.55,0 -0.99,0.11 l 0,22.88 z m 16.28,-11.55 q 0,4.73 -1.21,8.085 -1.155,3.3 -3.245,5.39 -2.09,2.09 -5.005,3.08 -2.86,0.935 -6.325,0.935 -1.815,0 -3.575,-0.22 -1.705,-0.165 -3.685,-0.605 l 0,-33.22 q 2.31,-0.495 4.345,-0.66 2.035,-0.165 3.795,-0.165 3.355,0 6.105,0.99 2.805,0.99 4.73,3.135 1.925,2.09 2.97,5.39 1.1,3.245 1.1,7.865 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4341" />
+        <path
+           d="m 611.95474,760.06226 0,-5.61 7.425,0 0,-22.825 -7.425,0 0,-5.61 21.615,0 0,5.61 -7.37,0 0,22.825 7.37,0 0,5.61 -21.615,0 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4343" />
+        <path
+           d="m 644.84474,743.01226 q 0,2.475 0.165,4.675 0.22,2.145 0.77,3.74 0.605,1.595 1.65,2.53 1.045,0.935 2.805,0.935 1.705,0 2.75,-0.935 1.1,-0.935 1.65,-2.53 0.605,-1.65 0.77,-3.795 0.22,-2.145 0.22,-4.62 0,-2.475 -0.22,-4.62 -0.165,-2.2 -0.77,-3.795 -0.55,-1.595 -1.595,-2.53 -1.045,-0.935 -2.805,-0.935 -1.76,0 -2.805,0.935 -1.045,0.935 -1.65,2.585 -0.55,1.595 -0.77,3.74 -0.165,2.145 -0.165,4.62 z m -6.875,0 q 0,-8.8 3.245,-13.255 3.245,-4.51 9.02,-4.51 5.995,0 9.13,4.51 3.135,4.455 3.135,13.255 0,8.8 -3.19,13.31 -3.19,4.455 -9.02,4.455 -5.995,0 -9.185,-4.455 -3.135,-4.51 -3.135,-13.31 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4345" />
+      </g>
+      <rect
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4252"
+         width="148.82167"
+         height="47.477173"
+         x="551.7641"
+         y="807.60736" />
+      <g
+         style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text4254">
+        <path
+           d="m 609.06996,848.396 -21.395,0 0,-34.045 6.82,0 0,28.435 14.575,0 0,5.61 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4348" />
+        <path
+           d="m 631.01496,848.396 -1.595,-7.865 -9.075,0 -1.54,7.865 -7.04,0 q 2.42,-10.065 4.895,-18.315 2.475,-8.305 4.785,-15.73 l 7.37,0 q 2.42,7.48 4.785,15.895 2.42,8.36 4.675,18.15 l -7.26,0 z m -6.05,-27.445 q -0.55,1.925 -1.045,3.685 -0.44,1.705 -0.88,3.41 -0.385,1.65 -0.77,3.355 -0.33,1.705 -0.66,3.52 l 6.655,0 q -0.33,-1.815 -0.66,-3.52 -0.33,-1.705 -0.77,-3.355 -0.385,-1.705 -0.88,-3.41 -0.44,-1.76 -0.99,-3.685 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4350" />
+        <path
+           d="m 664.56496,838.111 q 0,3.08 -1.045,5.17 -1.045,2.035 -2.86,3.3 -1.76,1.21 -4.235,1.76 -2.42,0.495 -5.225,0.495 -2.255,0 -4.675,-0.275 -2.42,-0.22 -4.785,-0.715 l 0,-33.055 q 1.925,-0.33 4.235,-0.55 2.31,-0.275 4.565,-0.275 3.85,0 6.27,0.825 2.42,0.77 3.795,2.09 1.375,1.265 1.87,2.86 0.495,1.595 0.495,3.19 0,2.42 -1.21,4.29 -1.155,1.87 -3.135,2.97 3.465,1.265 4.675,3.41 1.265,2.145 1.265,4.51 z m -16.06,-4.62 0,9.24 q 0.715,0.11 1.54,0.165 0.88,0.055 1.705,0.055 1.155,0 2.255,-0.165 1.1,-0.22 1.925,-0.715 0.88,-0.55 1.43,-1.485 0.55,-0.99 0.55,-2.475 0,-2.475 -1.595,-3.52 -1.54,-1.1 -4.18,-1.1 l -3.63,0 z m 2.64,-5.61 q 2.585,0 3.905,-1.1 1.32,-1.155 1.32,-3.135 0,-1.21 -0.385,-1.925 -0.385,-0.77 -1.045,-1.155 -0.66,-0.44 -1.54,-0.55 -0.88,-0.165 -1.815,-0.165 -0.77,0 -1.595,0.055 -0.825,0.055 -1.485,0.165 l 0,7.81 2.64,0 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+           id="path4352" />
+      </g>
+      <rect
+         style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4258"
+         width="630.96033"
+         height="47.477173"
+         x="69.625465"
+         y="542.60638" />
+      <g
+         transform="translate(-21.20875,-34.737003)"
+         id="g4260">
+        <g
+           style="font-style:normal;font-weight:normal;font-size:55.48899078px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="text4262">
+          <path
+             d="m 144.66984,618.13196 q -2.31,-5.665 -5.06,-11.275 -2.695,-5.665 -5.83,-11.33 l 0,22.605 -6.105,0 0,-34.045 5.445,0 q 1.54,2.42 3.08,5.28 1.54,2.805 2.97,5.61 1.485,2.805 2.695,5.445 1.265,2.64 2.145,4.62 l 0,-20.955 6.105,0 0,34.045 -5.445,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4271" />
+          <path
+             d="m 172.38984,618.13196 -1.595,-7.865 -9.075,0 -1.54,7.865 -7.04,0 q 2.42,-10.065 4.895,-18.315 2.475,-8.305 4.785,-15.73 l 7.37,0 q 2.42,7.48 4.785,15.895 2.42,8.36 4.675,18.15 l -7.26,0 z m -6.05,-27.445 q -0.55,1.925 -1.045,3.685 -0.44,1.705 -0.88,3.41 -0.385,1.65 -0.77,3.355 -0.33,1.705 -0.66,3.52 l 6.655,0 q -0.33,-1.815 -0.66,-3.52 -0.33,-1.705 -0.77,-3.355 -0.385,-1.705 -0.88,-3.41 -0.44,-1.76 -0.99,-3.685 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4273" />
+          <path
+             d="m 206.26984,584.08696 0,5.61 -8.965,0 0,28.435 -6.82,0 0,-28.435 -8.965,0 0,-5.61 24.75,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4275" />
+          <path
+             d="m 232.66984,584.08696 0,34.045 -6.765,0 0,-15.015 -9.02,0 0,15.015 -6.765,0 0,-34.045 6.765,0 0,13.42 9.02,0 0,-13.42 6.765,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4277" />
+          <path
+             d="m 254.88984,618.13196 -1.595,-7.865 -9.075,0 -1.54,7.865 -7.04,0 q 2.42,-10.065 4.895,-18.315 2.475,-8.305 4.785,-15.73 l 7.37,0 q 2.42,7.48 4.785,15.895 2.42,8.36 4.675,18.15 l -7.26,0 z m -6.05,-27.445 q -0.55,1.925 -1.045,3.685 -0.44,1.705 -0.88,3.41 -0.385,1.65 -0.77,3.355 -0.33,1.705 -0.66,3.52 l 6.655,0 q -0.33,-1.815 -0.66,-3.52 -0.33,-1.705 -0.77,-3.355 -0.385,-1.705 -0.88,-3.41 -0.44,-1.76 -0.99,-3.685 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4279" />
+          <path
+             d="m 282.16984,618.13196 q -2.31,-5.665 -5.06,-11.275 -2.695,-5.665 -5.83,-11.33 l 0,22.605 -6.105,0 0,-34.045 5.445,0 q 1.54,2.42 3.08,5.28 1.54,2.805 2.97,5.61 1.485,2.805 2.695,5.445 1.265,2.64 2.145,4.62 l 0,-20.955 6.105,0 0,34.045 -5.445,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4281" />
+          <path
+             d="m 293.11484,618.13196 0,-5.61 7.425,0 0,-22.825 -7.425,0 0,-5.61 21.615,0 0,5.61 -7.37,0 0,22.825 7.37,0 0,5.61 -21.615,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4283" />
+          <path
+             d="m 321.10984,618.13196 0,-34.045 20.625,0 0,5.61 -13.86,0 0,7.645 12.045,0 0,5.61 -12.045,0 0,9.57 15.07,0 0,5.61 -21.835,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4285" />
+          <path
+             d="m 370.44484,618.13196 -21.395,0 0,-34.045 6.82,0 0,28.435 14.575,0 0,5.61 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4287" />
+          <path
+             d="m 425.93984,607.84696 q 0,3.08 -1.045,5.17 -1.045,2.035 -2.86,3.3 -1.76,1.21 -4.235,1.76 -2.42,0.495 -5.225,0.495 -2.255,0 -4.675,-0.275 -2.42,-0.22 -4.785,-0.715 l 0,-33.055 q 1.925,-0.33 4.235,-0.55 2.31,-0.275 4.565,-0.275 3.85,0 6.27,0.825 2.42,0.77 3.795,2.09 1.375,1.265 1.87,2.86 0.495,1.595 0.495,3.19 0,2.42 -1.21,4.29 -1.155,1.87 -3.135,2.97 3.465,1.265 4.675,3.41 1.265,2.145 1.265,4.51 z m -16.06,-4.62 0,9.24 q 0.715,0.11 1.54,0.165 0.88,0.055 1.705,0.055 1.155,0 2.255,-0.165 1.1,-0.22 1.925,-0.715 0.88,-0.55 1.43,-1.485 0.55,-0.99 0.55,-2.475 0,-2.475 -1.595,-3.52 -1.54,-1.1 -4.18,-1.1 l -3.63,0 z m 2.64,-5.61 q 2.585,0 3.905,-1.1 1.32,-1.155 1.32,-3.135 0,-1.21 -0.385,-1.925 -0.385,-0.77 -1.045,-1.155 -0.66,-0.44 -1.54,-0.55 -0.88,-0.165 -1.815,-0.165 -0.77,0 -1.595,0.055 -0.825,0.055 -1.485,0.165 l 0,7.81 2.64,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4289" />
+          <path
+             d="m 447.38984,618.13196 -1.595,-7.865 -9.075,0 -1.54,7.865 -7.04,0 q 2.42,-10.065 4.895,-18.315 2.475,-8.305 4.785,-15.73 l 7.37,0 q 2.42,7.48 4.785,15.895 2.42,8.36 4.675,18.15 l -7.26,0 z m -6.05,-27.445 q -0.55,1.925 -1.045,3.685 -0.44,1.705 -0.88,3.41 -0.385,1.65 -0.77,3.355 -0.33,1.705 -0.66,3.52 l 6.655,0 q -0.33,-1.815 -0.66,-3.52 -0.33,-1.705 -0.77,-3.355 -0.385,-1.705 -0.88,-3.41 -0.44,-1.76 -0.99,-3.685 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4291" />
+          <path
+             d="m 466.91484,583.70196 q 2.915,0 5.28,0.66 2.365,0.66 4.07,2.035 1.705,1.375 2.585,3.52 0.935,2.09 0.935,4.95 0,2.97 -1.21,5.39 -1.21,2.42 -4.015,3.685 0.935,1.43 1.98,3.19 1.045,1.705 2.035,3.63 0.99,1.87 1.87,3.795 0.935,1.87 1.595,3.575 l -7.095,0 q -1.265,-3.3 -2.97,-6.325 -1.65,-3.08 -3.575,-6.215 l -3.52,0 0,12.54 -6.765,0 0,-33.55 q 0.99,-0.22 2.145,-0.385 1.21,-0.22 2.42,-0.275 1.21,-0.11 2.31,-0.165 1.1,-0.055 1.925,-0.055 z m 5.995,11.11 q 0,-2.695 -1.65,-3.96 -1.65,-1.265 -4.345,-1.265 -0.385,0 -0.935,0.055 -0.55,0 -1.1,0.11 l 0,10.23 1.485,0 q 3.465,0 5.005,-1.32 1.54,-1.375 1.54,-3.85 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4294" />
+          <path
+             d="m 508.76984,584.08696 0,5.61 -8.965,0 0,28.435 -6.82,0 0,-28.435 -8.965,0 0,-5.61 24.75,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4296" />
+          <path
+             d="m 535.44484,618.13196 -21.395,0 0,-34.045 6.82,0 0,28.435 14.575,0 0,5.61 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4298" />
+          <path
+             d="m 541.10984,618.13196 0,-34.045 20.625,0 0,5.61 -13.86,0 0,7.645 12.045,0 0,5.61 -12.045,0 0,9.57 15.07,0 0,5.61 -21.835,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4300" />
+          <path
+             d="m 591.26984,584.08696 0,5.61 -8.965,0 0,28.435 -6.82,0 0,-28.435 -8.965,0 0,-5.61 24.75,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4302" />
+          <path
+             d="m 618.76984,584.08696 0,5.61 -8.965,0 0,28.435 -6.82,0 0,-28.435 -8.965,0 0,-5.61 24.75,0 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4305" />
+        </g>
+        <g
+           style="font-style:normal;font-weight:normal;font-size:43.69346237px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="text4266">
+          <path
+             d="m 651.39392,619.44194 -5.44,0 11.9,-36.72 5.355,0 -11.815,36.72 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.5px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4309" />
+          <path
+             d="m 672.64392,619.44194 -5.44,0 11.9,-36.72 5.355,0 -11.815,36.72 z"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.5px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono Bold';text-align:center;text-anchor:middle"
+             id="path4311" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     style="display:none"
      transform="translate(-91.349172,-392.53048)"
      id="g4174"
      inkscape:groupmode="layer"
