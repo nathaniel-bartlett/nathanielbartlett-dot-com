@@ -330,12 +330,15 @@ body, html{
 }
 
 .infoBoxPara {
-  margin: 23px 10px 0px 10px;
+  margin: 25px 10px 0px 10px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .infoBoxParaLast {
-  margin: 23px 10px 10px 10px;
-  text-transform: uppercase;
+  margin: 25px 10px 10px 10px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .interviewPara {
