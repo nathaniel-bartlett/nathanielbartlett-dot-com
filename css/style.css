@@ -2,6 +2,7 @@ body, html{
   margin:0;
   padding:0;
   font-family: 'Ubuntu Mono';
+  /* font-family: 'IBM Plex Mono', monospace; */
   height: 100%;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
   background-color: #ffffff;
@@ -124,7 +125,7 @@ body, html{
   border: 2px solid #000000;
   color: #000000;
   text-decoration: none;
-  padding: 0px 2px 1px 2px;
+  padding: 0px 2px 0px 2px;
 }
 
 .standardText a:hover {
@@ -335,16 +336,19 @@ body, html{
 
 .infoBoxPara {
   margin: 25px 10px 0px 10px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: 'IBM Plex Mono', monospace;
+
 }
 
 .infoBoxParaLast {
   margin: 25px 10px 10px 10px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .interviewPara {
@@ -525,7 +529,7 @@ body, html{
 
 .playButton {
   border: 2px solid #000000;
-  padding: 0px 2px 1px 2px;
+  padding: 0px 2px 0px 2px;
   color: #000000;
   text-decoration: none;
   background-color: #ffffff;
@@ -588,7 +592,7 @@ body, html{
 
 .paraWorkTitle {
   border-top: 1px solid #000000;
-  padding: 1px 5px 3px 5px;
+  padding: 1px 5px 2px 5px;
   color: #ffffff;
   background-color: #000000;
   font-weight: bold;
