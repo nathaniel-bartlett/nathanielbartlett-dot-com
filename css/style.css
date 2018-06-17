@@ -336,19 +336,23 @@ body, html{
 
 .infoBoxPara {
   margin: 25px 10px 0px 10px;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 500;
-  font-family: 'IBM Plex Mono', monospace;
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 400;
+  /* font-family: 'IBM Plex Mono', monospace; */
+  font-family: 'Ubuntu Mono';
+  text-transform: uppercase;
 
 }
 
 .infoBoxParaLast {
   margin: 25px 10px 10px 10px;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 500;
-  font-family: 'IBM Plex Mono', monospace; 
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 400;
+  /* font-family: 'IBM Plex Mono', monospace;  */
+  font-family: 'Ubuntu Mono';
+  text-transform: uppercase;
 }
 
 .interviewPara {
