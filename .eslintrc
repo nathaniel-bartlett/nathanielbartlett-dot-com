@@ -26,6 +26,7 @@
       "max-len": [ "error", 260 ],
       "no-trailing-spaces": ["error", {"skipBlankLines": true}],
       "no-console": "off",
-      "quotes": [ 2, "single", { "avoidEscape": true }]
+      "quotes": [ 2, "single", { "avoidEscape": true }],
+      "vars-on-top": "off"
     }
   }

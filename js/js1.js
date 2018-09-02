@@ -1,6 +1,8 @@
+// /////////////////////////////////////////////
 //
 // DOG EAR MENU
 //
+// /////////////////////////////////////////////
 
 var dogEarNav = document.getElementById('dogEarNav');
 var menuIcons = document.getElementById('menuIcons');
@@ -59,83 +61,110 @@ window.addEventListener('resize', centerMenuButtons);
 window.addEventListener('resize', menuResize);
 
 
+// /////////////////////////////////////////////
 //
 // JUMP TO
 //
-
-function navJump(whereTo) {
-    if(whereTo == 'top') {
-        closeNav();
-        window.scrollTo(0,0);
-    } else {
-            var element = document.getElementById(whereTo);
-            //console.log(getYOffset(element).top);
-            closeNav();
-            window.scrollTo(0, Math.ceil(getYOffset(element).top));
-    }
-}
+// /////////////////////////////////////////////
 
 function getYOffset(element) {
-    element = element.getBoundingClientRect();
+
+    var output;
+
+    output = element.getBoundingClientRect();
+
     return {
-        top: element.top + window.scrollY
-    }
+        top: output.top + window.scrollY
+    };
+
 }
 
-/////////////////////////////////////////////////
-// TEXT BOXES ///////////////////////////////////
-/////////////////////////////////////////////////
+function navJump(whereTo) {
+
+    var element;
+
+    if (whereTo === 'top') {
+
+        closeNav();
+        window.scrollTo(0, 0);
+
+    } else {
+
+        element = document.getElementById(whereTo);
+        closeNav();
+        window.scrollTo(0, Math.ceil(getYOffset(element).top));
+
+    }
+
+}
+
+
+// /////////////////////////////////////////////
+//
+// TEXT BOXES
+//
+// /////////////////////////////////////////////
 
 var infoBoxContainer = document.getElementsByClassName('infoBoxContainer');
 var infoBoxTitle = document.getElementsByClassName('infoBoxTitle');
 var toggleBarCell = document.getElementsByClassName('toggleBarCell');
-
 var infoBoxTitleNest = document.getElementsByClassName('infoBoxTitleNest');
 var toggleBarCellNest = document.getElementsByClassName('toggleBarCellNest');
 
-for (var i = 0; i < infoBoxTitle.length; i++) {
-    infoBoxTitle[i].onclick = function(){
+for (let i = 0; i < infoBoxTitle.length; i += 1) {
+
+    infoBoxTitle[i].onclick = function () {
+
         this.parentElement.nextElementSibling.classList.toggle('active-box');
         var textArea = this.nextElementSibling;
         var outerArea = this.parentElement.nextElementSibling;
         var barArea = this.parentElement.nextElementSibling.children[0];
+
         if (textArea.style.display === 'block') {
+
             textArea.style.display = 'none';
             barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
+
         } else {
-                textArea.style.display = 'block';
-                //console.log(this.parentElement.nextElementSibling);
-                var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
-                barArea.innerHTML = '';
-                for (var x = 0; x < numOfChevrons; x++) {
-                    barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-                }
+
+            textArea.style.display = 'block';
+            var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+            barArea.innerHTML = '';
+
+            for (let x = 0; x < numOfChevrons; x += 1) {
+                barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
+            }
+
         }
-    }
+    };
 }
 
 var sideBarClickY = 0;
-window.addEventListener('click', printMousePos);
 
 function printMousePos(event) {
     sideBarClickY = event.clientY;
 }
 
-for (var i = 0; i < toggleBarCell.length; i++) {
-    toggleBarCell[i].onclick = function(clk){
+window.addEventListener('click', printMousePos);
+
+for (let i = 0; i < toggleBarCell.length; i += 1) {
+    toggleBarCell[i].onclick = function (clk) {
 
         this.classList.toggle('active-box');
         var textArea = this.previousElementSibling.children[1];
         var outerArea = this;
         var barArea = this.children[0];
+
         if (textArea.style.display === 'block') {
+
             textArea.style.display = 'none';
             barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
 
             // COLLAPSE ABOVE-THE-TOP BOX AT CLICK POINT
             var activeBoxTopY = this.getBoundingClientRect().top;
             var activeBoxClickPointY = clk.clientY;
-            if(activeBoxTopY < 0) {
+
+            if (activeBoxTopY < 0) {
                 window.scrollTo(0, (window.scrollY + activeBoxTopY - clk.clientY));
             }
             ///
