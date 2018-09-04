@@ -111,6 +111,8 @@ var toggleBarCell = document.getElementsByClassName('toggleBarCell');
 var infoBoxTitleNest = document.getElementsByClassName('infoBoxTitleNest');
 var toggleBarCellNest = document.getElementsByClassName('toggleBarCellNest');
 
+// TODO: NO FUNCTION DEFINITION IN A LOOP -- ETC. CLEAN THIS SCRIPT UP
+
 for (let i = 0; i < infoBoxTitle.length; i += 1) {
 
     infoBoxTitle[i].onclick = function () {
