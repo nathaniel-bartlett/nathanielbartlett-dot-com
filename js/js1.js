@@ -4,6 +4,8 @@
 //
 //
 
+// DEFINE A SPOT FOR VAR INITIALIZATIONS
+
 var dogEarNav = document.getElementById('dogEarNav');
 var menuIcons = document.getElementById('menuIcons');
 var navList = document.getElementById('nav-list');
@@ -15,8 +17,11 @@ dogEarNav.style.height = '0%';
 
 function centerMenuButtons() {
 
-    var menuButtonWidth = firstMenuButton.getBoundingClientRect().width;
-    var marLeftNavList = ((menuContainer.getBoundingClientRect().width) % menuButtonWidth) / 2;
+    var menuButtonWidth;
+    var marLeftNavList;
+
+    menuButtonWidth = firstMenuButton.getBoundingClientRect().width;
+    marLeftNavList = ((menuContainer.getBoundingClientRect().width) % menuButtonWidth) / 2;
 
     navList.style.marginLeft = Math.round(marLeftNavList) + 'px';
 
@@ -114,10 +119,15 @@ var toggleBarCellNest = document.getElementsByClassName('toggleBarCellNest');
 // Controls the behavior when the title on an info box is clicked
 function titleClick() {
 
+    var textArea;
+    var outerArea;
+    var barArea;
+    var numOfChevrons;
+
     this.parentElement.nextElementSibling.classList.toggle('active-box');
-    var textArea = this.nextElementSibling;
-    var outerArea = this.parentElement.nextElementSibling;
-    var barArea = this.parentElement.nextElementSibling.children[0];
+    textArea = this.nextElementSibling;
+    outerArea = this.parentElement.nextElementSibling;
+    barArea = this.parentElement.nextElementSibling.children[0];
 
     if (textArea.style.display === 'block') {
 
@@ -127,7 +137,7 @@ function titleClick() {
     } else {
 
         textArea.style.display = 'block';
-        var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+        numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
 
         for (let x = 0; x < numOfChevrons; x += 1) {
@@ -153,13 +163,17 @@ window.addEventListener('click', printMousePos);
 // Controls the behavior when the toggle bar is clicked
 function toggleBarClick(clk) {
 
-    this.classList.toggle('active-box');
-
-    var textArea = this.previousElementSibling.children[1];
-    var outerArea = this;
-    var barArea = this.children[0];
+    var textArea;
+    var outerArea;
+    var barArea;
     var numOfChevrons;
 
+    this.classList.toggle('active-box');
+
+    textArea = this.previousElementSibling.children[1];
+    outerArea = this;
+    barArea = this.children[0];
+    
     if (textArea.style.display === 'block') {
 
         textArea.style.display = 'none';
@@ -179,7 +193,7 @@ function toggleBarClick(clk) {
         numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
         
-        for (var x = 0; x < numOfChevrons; x += 1) {
+        for (let x = 0; x < numOfChevrons; x += 1) {
             barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
@@ -194,11 +208,22 @@ function nestToggleBarClick(clk) {
 
     this.classList.toggle('active-box');
 
-    var textArea = this.previousElementSibling.children[1];
-    var outerArea = this;
-    var barArea = this.children[0];
-    var outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
-    var barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
+    var textArea;
+    var outerArea;
+    var barArea;
+    var outerAreaNest;
+    var barAreaNest;
+    var numOfChevrons;
+    var numOfChevronsNest;
+    var numOfChevronsNestClose;
+    var activeBoxTopY;
+    var activeBoxClickPointY;
+
+    textArea = this.previousElementSibling.children[1];
+    outerArea = this;
+    barArea = this.children[0];
+    outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
+    barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
 
     if (textArea.style.display === 'block') {
 
@@ -206,8 +231,8 @@ function nestToggleBarClick(clk) {
         barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
 
         // COLLAPSE ABOVE-THE-TOP BOX AT CLICK POINT
-        var activeBoxTopY = this.getBoundingClientRect().top;
-        var activeBoxClickPointY = clk.clientY;
+        activeBoxTopY = this.getBoundingClientRect().top;
+        activeBoxClickPointY = clk.clientY;
 
         if (activeBoxTopY < 0) {
             window.scrollTo(0, ((window.scrollY + activeBoxTopY) - clk.clientY));
@@ -215,7 +240,7 @@ function nestToggleBarClick(clk) {
 
         // nest part
         barAreaNest.innerHTML = '';
-        var numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
+        numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
 
         for (let x = 0; x < numOfChevronsNestClose; x += 1) {
             barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
@@ -224,7 +249,7 @@ function nestToggleBarClick(clk) {
     } else {
 
         textArea.style.display = 'block';
-        var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+        numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
 
         for (let x = 0; x < numOfChevrons; x += 1) {
@@ -232,7 +257,7 @@ function nestToggleBarClick(clk) {
         }
 
         // nest part
-        var numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
+        numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
         barAreaNest.innerHTML = '';
 
         for (let x = 0; x < numOfChevronsNest; x += 1) {
@@ -250,21 +275,27 @@ function nestTitleClick() {
 
     this.parentElement.nextElementSibling.classList.toggle('active-box');
 
-    var textArea = this.nextElementSibling;
-    var outerArea = this.parentElement.nextElementSibling;
-    var barArea = this.parentElement.nextElementSibling.children[0];
+    var textArea;
+    var outerArea;
+    var barArea;
+    var barAreaNest;
+    var outerAreaNest;
+    var numOfChevronsNestClose;
+    var numOfChevrons;
+    var numOfChevronsNest;
 
-    // nest
-    var barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
-    var outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
+    textArea = this.nextElementSibling;
+    outerArea = this.parentElement.nextElementSibling;
+    barArea = this.parentElement.nextElementSibling.children[0];
+    barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
+    outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
 
     if (textArea.style.display === 'block') {
         textArea.style.display = 'none';
         barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
 
-        // nest part
         barAreaNest.innerHTML = '';
-        var numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
+        numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
 
         for (let x = 0; x < numOfChevronsNestClose; x += 1) {
             barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
@@ -273,15 +304,14 @@ function nestTitleClick() {
     } else {
 
         textArea.style.display = 'block';
-        var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+        numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
 
         for (let x = 0; x < numOfChevrons; x += 1) {
             barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
-        
-        // nest part
-        var numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
+
+        numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
         barAreaNest.innerHTML = '';
 
         for (let x = 0; x < numOfChevronsNest; x += 1) {
@@ -307,12 +337,15 @@ for (let i = 0; i < toggleBarCellNest.length; i += 1) {
 
 function sizeInfoBox() {
 
-    var activeBox = document.getElementsByClassName('active-box');
+    var activeBox;
+    var numOfChevrons;
+
+    activeBox = document.getElementsByClassName('active-box');
 
     for (let i = 0; i < activeBox.length; i += 1) {
 
         activeBox[i].children[0].innerHTML = '';
-        var numOfChevrons = Math.floor(activeBox[i].scrollHeight / 40);
+        numOfChevrons = Math.floor(activeBox[i].scrollHeight / 40);
 
         for (let x = 0; x < numOfChevrons; x += 1) {
             activeBox[i].children[0].innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
@@ -337,8 +370,6 @@ var audioPlayer = document.getElementById('audioPlayer');
 var audioPlayerContainer = document.getElementById('audioPlayerContainer');
 var nowPlaying = document.getElementById('nowPlaying');
 var dotsOuter = document.getElementById('dotsOuter');
-
-
 var arrayOfDiscItems = [];
 var arrayOfColums = [];
 
@@ -359,20 +390,19 @@ for (var i = 0; i < discographyTiles.children.length; i += 1) {
 
 var windowWidth = window.innerWidth;
 
-// give only one trigger on resize into new column size (4-3-2-1)
-var discGate1 = 1;
-var discGate12 = 1;
-var discGate123 = 1;
-var discGate1234 = 1;
-
 // function for creating col/hi pairs
 function colHiFunc(col, scrollHeight) {
-    this.col = col; // column number
-    this.hi = scrollHeight; // column height
+    this.col = col;
+    this.hi = scrollHeight;
 }
 
 function resizeDisc() {
 
+    // give only one trigger on resize into new column size (4-3-2-1)
+    var discGate1 = 1;
+    var discGate12 = 1;
+    var discGate123 = 1;
+    var discGate1234 = 1;
     var columsInDisc;
 
     windowWidth = window.innerWidth;
@@ -391,11 +421,11 @@ function resizeDisc() {
             discCols[i].innerHTML = '';
         }
 
-        //remove other HTML
+        // Remove other HTML
         discographyTiles.innerHTML = '';
 
-        //add columns
-        for (var i = 0; i < columsInDisc; i++) {
+        // Add columns
+        for (let i = 0; i < columsInDisc; i++) {
             discographyTiles.appendChild(arrayOfColums[i]);
         }
 
