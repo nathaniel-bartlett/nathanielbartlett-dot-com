@@ -1,8 +1,8 @@
-// /////////////////////////////////////////////
+//
 //
 // DOG EAR MENU
 //
-// /////////////////////////////////////////////
+//
 
 var dogEarNav = document.getElementById('dogEarNav');
 var menuIcons = document.getElementById('menuIcons');
@@ -61,11 +61,11 @@ window.addEventListener('resize', centerMenuButtons);
 window.addEventListener('resize', menuResize);
 
 
-// /////////////////////////////////////////////
+//
 //
 // JUMP TO
 //
-// /////////////////////////////////////////////
+//
 
 function getYOffset(element) {
 
@@ -99,11 +99,11 @@ function navJump(whereTo) {
 }
 
 
-// /////////////////////////////////////////////
+//
 //
 // TEXT BOXES
 //
-// /////////////////////////////////////////////
+//
 
 var infoBoxContainer = document.getElementsByClassName('infoBoxContainer');
 var infoBoxTitle = document.getElementsByClassName('infoBoxTitle');
@@ -111,34 +111,35 @@ var toggleBarCell = document.getElementsByClassName('toggleBarCell');
 var infoBoxTitleNest = document.getElementsByClassName('infoBoxTitleNest');
 var toggleBarCellNest = document.getElementsByClassName('toggleBarCellNest');
 
-// TODO: NO FUNCTION DEFINITION IN A LOOP -- ETC. CLEAN THIS SCRIPT UP
+// Controls the behavior when the title on an info box is clicked
+function titleClick() {
 
-for (let i = 0; i < infoBoxTitle.length; i += 1) {
+    this.parentElement.nextElementSibling.classList.toggle('active-box');
+    var textArea = this.nextElementSibling;
+    var outerArea = this.parentElement.nextElementSibling;
+    var barArea = this.parentElement.nextElementSibling.children[0];
 
-    infoBoxTitle[i].onclick = function () {
+    if (textArea.style.display === 'block') {
 
-        this.parentElement.nextElementSibling.classList.toggle('active-box');
-        var textArea = this.nextElementSibling;
-        var outerArea = this.parentElement.nextElementSibling;
-        var barArea = this.parentElement.nextElementSibling.children[0];
+        textArea.style.display = 'none';
+        barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
 
-        if (textArea.style.display === 'block') {
+    } else {
 
-            textArea.style.display = 'none';
-            barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
+        textArea.style.display = 'block';
+        var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+        barArea.innerHTML = '';
 
-        } else {
-
-            textArea.style.display = 'block';
-            var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
-            barArea.innerHTML = '';
-
-            for (let x = 0; x < numOfChevrons; x += 1) {
-                barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-            }
-
+        for (let x = 0; x < numOfChevrons; x += 1) {
+            barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
-    };
+
+    }
+}
+
+// Assign funtions to title click
+for (let i = 0; i < infoBoxTitle.length; i += 1) {
+    infoBoxTitle[i].onclick = titleClick;
 }
 
 var sideBarClickY = 0;
@@ -149,146 +150,185 @@ function printMousePos(event) {
 
 window.addEventListener('click', printMousePos);
 
+// Controls the behavior when the toggle bar is clicked
+function toggleBarClick(clk) {
+
+    this.classList.toggle('active-box');
+
+    var textArea = this.previousElementSibling.children[1];
+    var outerArea = this;
+    var barArea = this.children[0];
+    var numOfChevrons;
+
+    if (textArea.style.display === 'block') {
+
+        textArea.style.display = 'none';
+        barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
+
+        // COLLAPSE ABOVE-THE-TOP BOX AT CLICK POINT
+        var activeBoxTopY = this.getBoundingClientRect().top;
+        var activeBoxClickPointY = clk.clientY;
+
+        if (activeBoxTopY < 0) {
+            window.scrollTo(0, ((window.scrollY + activeBoxTopY) - clk.clientY));
+        }
+
+    } else {
+        
+        textArea.style.display = 'block';
+        numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+        barArea.innerHTML = '';
+        
+        for (var x = 0; x < numOfChevrons; x += 1) {
+            barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
+        }
+    }
+}
+
+// Assign funtions to toggle bar click
 for (let i = 0; i < toggleBarCell.length; i += 1) {
-    toggleBarCell[i].onclick = function (clk) {
-
-        this.classList.toggle('active-box');
-        var textArea = this.previousElementSibling.children[1];
-        var outerArea = this;
-        var barArea = this.children[0];
-
-        if (textArea.style.display === 'block') {
-
-            textArea.style.display = 'none';
-            barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
-
-            // COLLAPSE ABOVE-THE-TOP BOX AT CLICK POINT
-            var activeBoxTopY = this.getBoundingClientRect().top;
-            var activeBoxClickPointY = clk.clientY;
-
-            if (activeBoxTopY < 0) {
-                window.scrollTo(0, (window.scrollY + activeBoxTopY - clk.clientY));
-            }
-            ///
-
-        } else {
-                textArea.style.display = 'block';
-                var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
-                barArea.innerHTML = '';
-                for (var x = 0; x < numOfChevrons; x++) {
-                    barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-                }
-        }
-    }
+    toggleBarCell[i].onclick = toggleBarClick;
 }
-//nest
-for (var i = 0; i < toggleBarCellNest.length; i++) {
-    toggleBarCellNest[i].onclick = function(clk){
-        this.classList.toggle('active-box');
-        var textArea = this.previousElementSibling.children[1];
-        var outerArea = this;
-        var barArea = this.children[0];
-        var outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
-        var barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
-        if (textArea.style.display === 'block') {
-            textArea.style.display = 'none';
-            barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
 
-            // COLLAPSE ABOVE-THE-TOP BOX AT CLICK POINT
-            var activeBoxTopY = this.getBoundingClientRect().top;
-            var activeBoxClickPointY = clk.clientY;
-            if(activeBoxTopY < 0) {
-                window.scrollTo(0, (window.scrollY + activeBoxTopY - clk.clientY));
-            }
-            ///
+function nestToggleBarClick(clk) {
 
-            //nest part
-            barAreaNest.innerHTML = '';
-            var numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
-            for (var x = 0; x < numOfChevronsNestClose; x++) {
-                barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-            }
-        } else {
-                textArea.style.display = 'block';
-                var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
-                barArea.innerHTML = '';
-                for (var x = 0; x < numOfChevrons; x++) {
-                    barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-                }
-                //nest part
-                var numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
-                barAreaNest.innerHTML = '';
-                for (var x = 0; x < numOfChevronsNest; x++) {
-                    barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-                }
+    this.classList.toggle('active-box');
+
+    var textArea = this.previousElementSibling.children[1];
+    var outerArea = this;
+    var barArea = this.children[0];
+    var outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
+    var barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
+
+    if (textArea.style.display === 'block') {
+
+        textArea.style.display = 'none';
+        barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
+
+        // COLLAPSE ABOVE-THE-TOP BOX AT CLICK POINT
+        var activeBoxTopY = this.getBoundingClientRect().top;
+        var activeBoxClickPointY = clk.clientY;
+
+        if (activeBoxTopY < 0) {
+            window.scrollTo(0, ((window.scrollY + activeBoxTopY) - clk.clientY));
+        }
+
+        // nest part
+        barAreaNest.innerHTML = '';
+        var numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
+
+        for (let x = 0; x < numOfChevronsNestClose; x += 1) {
+            barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
+        }
+
+    } else {
+
+        textArea.style.display = 'block';
+        var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+        barArea.innerHTML = '';
+
+        for (let x = 0; x < numOfChevrons; x += 1) {
+            barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
+        }
+
+        // nest part
+        var numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
+        barAreaNest.innerHTML = '';
+
+        for (let x = 0; x < numOfChevronsNest; x += 1) {
+            barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
 }
 
-//nest title click
-for (var i = 0; i < infoBoxTitleNest.length; i++) {
-    infoBoxTitleNest[i].onclick = function(){
-        this.parentElement.nextElementSibling.classList.toggle('active-box');
-        var textArea = this.nextElementSibling;
-        var outerArea = this.parentElement.nextElementSibling;
-        var barArea = this.parentElement.nextElementSibling.children[0];
-        //nest
-        var barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
-        var outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
+// Assign functions to nested toggle bars
+for (let i = 0; i < toggleBarCellNest.length; i += 1) {
+    toggleBarCellNest[i].onclick = nestToggleBarClick;
+}
 
-        if (textArea.style.display === 'block') {
-            textArea.style.display = 'none';
-            barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
-            //nest part
-            barAreaNest.innerHTML = '';
-            var numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
-            for (var x = 0; x < numOfChevronsNestClose; x++) {
-                barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-            }
-        } else {
-                textArea.style.display = 'block';
-                var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
-                barArea.innerHTML = '';
-                for (var x = 0; x < numOfChevrons; x++) {
-                    barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-                }
-                //nest part
-                var numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
-                barAreaNest.innerHTML = '';
-                for (var x = 0; x < numOfChevronsNest; x++) {
-                    barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
-                }
+function nestTitleClick() {
+
+    this.parentElement.nextElementSibling.classList.toggle('active-box');
+
+    var textArea = this.nextElementSibling;
+    var outerArea = this.parentElement.nextElementSibling;
+    var barArea = this.parentElement.nextElementSibling.children[0];
+
+    // nest
+    var barAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[0];
+    var outerAreaNest = this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
+
+    if (textArea.style.display === 'block') {
+        textArea.style.display = 'none';
+        barArea.innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true"></i>';
+
+        // nest part
+        barAreaNest.innerHTML = '';
+        var numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
+
+        for (let x = 0; x < numOfChevronsNestClose; x += 1) {
+            barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
+        }
+
+    } else {
+
+        textArea.style.display = 'block';
+        var numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
+        barArea.innerHTML = '';
+
+        for (let x = 0; x < numOfChevrons; x += 1) {
+            barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
+        }
+        
+        // nest part
+        var numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
+        barAreaNest.innerHTML = '';
+
+        for (let x = 0; x < numOfChevronsNest; x += 1) {
+            barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
 }
 
-//add starting chevrons
-for(var i = 0; i < toggleBarCell.length; i++) {
+// nest title click
+for (let i = 0; i < infoBoxTitleNest.length; i += 1) {
+    infoBoxTitleNest[i].onclick = nestTitleClick;
+}
+
+// add starting chevrons
+for (let i = 0; i < toggleBarCell.length; i += 1) {
     toggleBarCell[i].children[0].innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true">';
 }
-//nest part
-for(var i = 0; i < toggleBarCellNest.length; i++) {
+
+// nest part
+for (let i = 0; i < toggleBarCellNest.length; i += 1) {
     toggleBarCellNest[i].children[0].innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true">';
 }
 
-//re-do chevrons for window resize
-window.addEventListener('resize', sizeInfoBox);
-
 function sizeInfoBox() {
+
     var activeBox = document.getElementsByClassName('active-box');
 
-    for (var i = 0; i < activeBox.length; i++) {
+    for (let i = 0; i < activeBox.length; i += 1) {
+
         activeBox[i].children[0].innerHTML = '';
         var numOfChevrons = Math.floor(activeBox[i].scrollHeight / 40);
-        for (var x = 0; x < numOfChevrons; x++) {
+
+        for (let x = 0; x < numOfChevrons; x += 1) {
             activeBox[i].children[0].innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
 }
 
-///////////////////////////////////////////////////////
-// AUDIO PLAYER ///////////////////////////////////
-///////////////////////////////////////////////////////////
+// Redo chevrons for window resize
+window.addEventListener('resize', sizeInfoBox);
+
+
+//
+//
+// AUDIO PLAYER
+//
+//
 
 var discographyTiles = document.getElementById('discography-tiles');
 var discCols = document.getElementsByClassName('disc-cols');
@@ -302,22 +342,22 @@ var dotsOuter = document.getElementById('dotsOuter');
 var arrayOfDiscItems = [];
 var arrayOfColums = [];
 
-// put all albums into an array
-for (var i = 0; i < discItems.length; i++) {
+// Put all albums into an array
+for (let i = 0; i < discItems.length; i += 1) {
     arrayOfDiscItems.push(discItems[i]);
 }
 
-// remove disc items from columns
-for (var i = 0; i < discCols.length; i++) {
+// Remove disc items from columns
+for (let i = 0; i < discCols.length; i += 1) {
     discCols[i].innerHTML = '';
 }
 
-// put all colums (now enpty) into an array
-for (var i = 0; i < discographyTiles.children.length; i++) {
+// Put all colums (now enpty) into an array
+for (var i = 0; i < discographyTiles.children.length; i += 1) {
     arrayOfColums.push(discCols[i]);
 }
 
-windowWidth = window.innerWidth;
+var windowWidth = window.innerWidth;
 
 // give only one trigger on resize into new column size (4-3-2-1)
 var discGate1 = 1;
@@ -326,25 +366,20 @@ var discGate123 = 1;
 var discGate1234 = 1;
 
 // function for creating col/hi pairs
-function colHiFunc (col, scrollHeight) {
-    this.col = col;  // column number
-    this.hi = scrollHeight;  // column height
+function colHiFunc(col, scrollHeight) {
+    this.col = col; // column number
+    this.hi = scrollHeight; // column height
 }
 
-// call resizeDisc right here to initialize colums
-resizeDisc();
-
-window.addEventListener('resize', resizeDisc);
-
 function resizeDisc() {
+
+    var columsInDisc;
 
     windowWidth = window.innerWidth;
 
     if (windowWidth > 1400) {
 
-        var columsInDisc = 4;
-
-        //console.log("1234");
+        columsInDisc = 4;
 
         discGate1 = 1;
         discGate12 = 1;
@@ -352,7 +387,7 @@ function resizeDisc() {
         discGate1234 = 0;
 
         // remove disc items from columns
-        for (var i = 0; i < discCols.length; i++) {
+        for (let i = 0; i < discCols.length; i += 1) {
             discCols[i].innerHTML = '';
         }
 
@@ -421,7 +456,7 @@ function resizeDisc() {
 
     if (windowWidth > 1050 && windowWidth < 1400) {
 
-        var columsInDisc = 3;
+        columsInDisc = 3;
 
         //console.log("123");
 
@@ -487,7 +522,7 @@ function resizeDisc() {
 
     if (windowWidth > 700 && windowWidth < 1050) {
 
-        var columsInDisc = 2;
+        columsInDisc = 2;
 
         //console.log("12");
 
@@ -553,7 +588,7 @@ function resizeDisc() {
 
     if (windowWidth < 700) {
 
-        var columsInDisc = 1;
+        columsInDisc = 1;
 
         //console.log("1");
 
@@ -582,6 +617,11 @@ function resizeDisc() {
 
     }
 }
+
+window.addEventListener('resize', resizeDisc);
+
+// call resizeDisc right here to initialize colums
+resizeDisc();
 
 var dogEarBottomButton = document.getElementById('dogEarBottomButton');
 var audioExpand = document.getElementById('audioExpand');
