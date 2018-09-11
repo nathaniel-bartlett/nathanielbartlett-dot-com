@@ -2,7 +2,7 @@
 **Files for [nathanielbartlett.com](http://nathanielbartlett.com)**
 ### WEBSITE ETHOS
 #### Fast
-* The website under 960kB and will load in under 1s on a good connection.
+* The website is under 960kB and will load in under 1s on a good connection.
 * No irritating slow transitions, just snappy performance.
 #### Clean
 * The raw, minimal design does not detract from the main feature of the website: audio files.
