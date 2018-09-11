@@ -1,5 +1,5 @@
 ## nathanielbartlett-dot-com
-**Files for [nathanielbartlett.com](http://google.com)**
+**Files for [nathanielbartlett.com](http://nathanielbartlett.com)**
 ### WEBSITE ETHOS
 #### Fast
 * The website under 960kB and will load in under 1s on a good connection.
