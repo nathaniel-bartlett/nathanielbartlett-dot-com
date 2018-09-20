@@ -118,6 +118,7 @@ function titleClick() {
     var outerArea;
     var barArea;
     var numOfChevrons;
+    var i;
 
     this.parentElement.nextElementSibling.classList.toggle('active-box');
     textArea = this.nextElementSibling;
@@ -135,16 +136,22 @@ function titleClick() {
         numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
 
-        for (let x = 0; x < numOfChevrons; x += 1) {
+        for (i = 0; i < numOfChevrons; i += 1) {
             barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
 
     }
 }
 
-for (let i = 0; i < infoBoxTitle.length; i += 1) {
-    infoBoxTitle[i].onclick = titleClick;
-}
+(function () {
+
+    var i;
+
+    for (i = 0; i < infoBoxTitle.length; i += 1) {
+        infoBoxTitle[i].onclick = titleClick;
+    }
+
+}());
 
 function toggleBarClick(clk) {
 
@@ -152,6 +159,7 @@ function toggleBarClick(clk) {
     var outerArea;
     var barArea;
     var numOfChevrons;
+    var i;
 
     this.classList.toggle('active-box');
 
@@ -177,15 +185,21 @@ function toggleBarClick(clk) {
         numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
         
-        for (let x = 0; x < numOfChevrons; x += 1) {
+        for (i = 0; i < numOfChevrons; i += 1) {
             barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
 }
 
-for (let i = 0; i < toggleBarCell.length; i += 1) {
-    toggleBarCell[i].onclick = toggleBarClick;
-}
+(function () {
+
+    var i;
+
+    for (i = 0; i < toggleBarCell.length; i += 1) {
+        toggleBarCell[i].onclick = toggleBarClick;
+    }
+
+}());
 
 function nestToggleBarClick(clk) {
 
@@ -200,6 +214,7 @@ function nestToggleBarClick(clk) {
     var numOfChevronsNest;
     var numOfChevronsNestClose;
     var activeBoxTopY;
+    var i;
 
     textArea = this.previousElementSibling.children[1];
     outerArea = this;
@@ -221,7 +236,7 @@ function nestToggleBarClick(clk) {
         barAreaNest.innerHTML = '';
         numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
 
-        for (let x = 0; x < numOfChevronsNestClose; x += 1) {
+        for (i = 0; i < numOfChevronsNestClose; i += 1) {
             barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
 
@@ -231,7 +246,7 @@ function nestToggleBarClick(clk) {
         numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
 
-        for (let x = 0; x < numOfChevrons; x += 1) {
+        for (i = 0; i < numOfChevrons; i += 1) {
             barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
 
@@ -239,15 +254,21 @@ function nestToggleBarClick(clk) {
         numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
         barAreaNest.innerHTML = '';
 
-        for (let x = 0; x < numOfChevronsNest; x += 1) {
+        for (i = 0; i < numOfChevronsNest; i += 1) {
             barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
 }
 
-for (let i = 0; i < toggleBarCellNest.length; i += 1) {
-    toggleBarCellNest[i].onclick = nestToggleBarClick;
-}
+(function () {
+
+    var i;
+
+    for (i = 0; i < toggleBarCellNest.length; i += 1) {
+        toggleBarCellNest[i].onclick = nestToggleBarClick;
+    }
+
+}());
 
 function nestTitleClick() {
 
@@ -261,6 +282,7 @@ function nestTitleClick() {
     var numOfChevronsNestClose;
     var numOfChevrons;
     var numOfChevronsNest;
+    var i;
 
     textArea = this.nextElementSibling;
     outerArea = this.parentElement.nextElementSibling;
@@ -275,7 +297,7 @@ function nestTitleClick() {
         barAreaNest.innerHTML = '';
         numOfChevronsNestClose = Math.floor(outerAreaNest.scrollHeight / 40);
 
-        for (let x = 0; x < numOfChevronsNestClose; x += 1) {
+        for (i = 0; i < numOfChevronsNestClose; i += 1) {
             barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
 
@@ -285,44 +307,52 @@ function nestTitleClick() {
         numOfChevrons = Math.floor(outerArea.scrollHeight / 40);
         barArea.innerHTML = '';
 
-        for (let x = 0; x < numOfChevrons; x += 1) {
+        for (i = 0; i < numOfChevrons; i += 1) {
             barArea.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
 
         numOfChevronsNest = Math.floor(outerAreaNest.scrollHeight / 40);
         barAreaNest.innerHTML = '';
 
-        for (let x = 0; x < numOfChevronsNest; x += 1) {
+        for (i = 0; i < numOfChevronsNest; i += 1) {
             barAreaNest.innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
 }
 
-for (let i = 0; i < infoBoxTitleNest.length; i += 1) {
-    infoBoxTitleNest[i].onclick = nestTitleClick;
-}
+(function () {
 
-for (let i = 0; i < toggleBarCell.length; i += 1) {
-    toggleBarCell[i].children[0].innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true">';
-}
+    var i;
 
-for (let i = 0; i < toggleBarCellNest.length; i += 1) {
-    toggleBarCellNest[i].children[0].innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true">';
-}
+    for (i = 0; i < infoBoxTitleNest.length; i += 1) {
+        infoBoxTitleNest[i].onclick = nestTitleClick;
+    }
+    
+    for (i = 0; i < toggleBarCell.length; i += 1) {
+        toggleBarCell[i].children[0].innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true">';
+    }
+    
+    for (i = 0; i < toggleBarCellNest.length; i += 1) {
+        toggleBarCellNest[i].children[0].innerHTML = '<i class="fa fa-chevron-down" aria-hidden="true">';
+    }
+
+}());
 
 function sizeInfoBox() {
 
     var activeBox;
     var numOfChevrons;
+    var i;
+    var x;
 
     activeBox = document.getElementsByClassName('active-box');
 
-    for (let i = 0; i < activeBox.length; i += 1) {
+    for (i = 0; i < activeBox.length; i += 1) {
 
         activeBox[i].children[0].innerHTML = '';
         numOfChevrons = Math.floor(activeBox[i].scrollHeight / 40);
 
-        for (let x = 0; x < numOfChevrons; x += 1) {
+        for (x = 0; x < numOfChevrons; x += 1) {
             activeBox[i].children[0].innerHTML += '<i class="fa fa-chevron-up" aria-hidden="true">';
         }
     }
@@ -347,20 +377,26 @@ var dotsOuter = document.getElementById('dotsOuter');
 var arrayOfDiscItems = [];
 var arrayOfColums = [];
 
-// Put all albums into an array
-for (let i = 0; i < discItems.length; i += 1) {
-    arrayOfDiscItems.push(discItems[i]);
-}
+(function () {
 
-// Remove disc items from columns
-for (let i = 0; i < discCols.length; i += 1) {
-    discCols[i].innerHTML = '';
-}
+    var i;
 
-// Put all colums (now enpty) into an array
-for (var i = 0; i < discographyTiles.children.length; i += 1) {
-    arrayOfColums.push(discCols[i]);
-}
+    // Put all albums into an array
+    for (i = 0; i < discItems.length; i += 1) {
+        arrayOfDiscItems.push(discItems[i]);
+    }
+
+    // Remove disc items from columns
+    for (i = 0; i < discCols.length; i += 1) {
+        discCols[i].innerHTML = '';
+    }
+
+    // Put all colums (now enpty) into an array
+    for (i = 0; i < discographyTiles.children.length; i += 1) {
+        arrayOfColums.push(discCols[i]);
+    }
+
+}());
 
 var windowWidth = window.innerWidth;
 
@@ -371,36 +407,38 @@ function ColHiFunc(col, scrollHeight) {
 }
 
 function resizeDisc() {
-    
+
+    var columsInDisc;
+    var itemCounter;
+    var colHiArr;
+    var colHiObj;
+    var itemsLeft;
+    var putInColumn;
+    var i;
+    var x;
+
     windowWidth = window.innerWidth;
 
     if (windowWidth > 1400) {
-
-        let columsInDisc;
-        let itemCounter;
-        let colHiArr;
-        let colHiObj;
-        let itemsLeft;
-        let putInColumn;
-
+       
         columsInDisc = 4;
 
         // remove disc items from columns
-        for (let c = 0; c < discCols.length; c += 1) {
-            discCols[c].innerHTML = '';
+        for (i = 0; i < discCols.length; i += 1) {
+            discCols[i].innerHTML = '';
         }
 
         // Remove other HTML
         discographyTiles.innerHTML = '';
 
         // Add columns
-        for (let c = 0; c < columsInDisc; c += 1) {
-            discographyTiles.appendChild(arrayOfColums[c]);
+        for (i = 0; i < columsInDisc; i += 1) {
+            discographyTiles.appendChild(arrayOfColums[i]);
         }
 
         // Calulate size in %
-        for (let c = 0; c < discographyTiles.children.length; c += 1) {
-            discographyTiles.children[c].style.width = (100 / columsInDisc) + '%';
+        for (i = 0; i < discographyTiles.children.length; i += 1) {
+            discographyTiles.children[i].style.width = (100 / columsInDisc) + '%';
         }
 
         // Add disc items
@@ -410,14 +448,14 @@ function resizeDisc() {
         colHiArr = [];
 
         // Put items in first row
-        for (let c = 0; c < columsInDisc; c += 1) {
-            discographyTiles.children[c].appendChild(arrayOfDiscItems[c]);
+        for (i = 0; i < columsInDisc; i += 1) {
+            discographyTiles.children[i].appendChild(arrayOfDiscItems[i]);
             itemCounter += 1;
         }
 
         // Put col height pairs into an array of objects
-        for (let c = 0; c < columsInDisc && c < (arrayOfDiscItems.length - itemCounter); c += 1) {
-            colHiObj = new ColHiFunc(c, arrayOfColums[c].scrollHeight);
+        for (i = 0; i < columsInDisc && i < (arrayOfDiscItems.length - itemCounter); i += 1) {
+            colHiObj = new ColHiFunc(i, arrayOfColums[i].scrollHeight);
             colHiArr.push(colHiObj);
         }
 
@@ -429,7 +467,7 @@ function resizeDisc() {
         // Put in columns
         itemsLeft = arrayOfDiscItems.length - itemCounter;
 
-        for (let c = 0; c < itemsLeft; c += 1) {
+        for (i = 0; i < itemsLeft; i += 1) {
 
             putInColumn = colHiArr[0].col; // put in first one
             discographyTiles.children[putInColumn].appendChild(arrayOfDiscItems[itemCounter]);
@@ -438,7 +476,7 @@ function resizeDisc() {
             colHiArr = []; // clear old array
 
             // Recalculate column heights after new item added
-            for (let x = 0; x < columsInDisc; x += 1) {
+            for (x = 0; x < columsInDisc; x += 1) {
                 colHiObj = new ColHiFunc(x, arrayOfColums[x].scrollHeight);
                 colHiArr.push(colHiObj);
             }
@@ -455,39 +493,32 @@ function resizeDisc() {
 
     if (windowWidth > 1050 && windowWidth < 1400) {
 
-        let columsInDisc;
-        let itemCounter;
-        let colHiArr;
-        let colHiObj;
-        let itemsLeft;
-        let putInColumn;
-
         columsInDisc = 3;
 
-        for (let c = 0; c < discCols.length; c += 1) {
-            discCols[c].innerHTML = '';
+        for (i = 0; i < discCols.length; i += 1) {
+            discCols[i].innerHTML = '';
         }
 
         discographyTiles.innerHTML = '';
 
-        for (let c = 0; c < columsInDisc; c += 1) {
-            discographyTiles.appendChild(arrayOfColums[c]);
+        for (i = 0; i < columsInDisc; i += 1) {
+            discographyTiles.appendChild(arrayOfColums[i]);
         }
 
-        for (let c = 0; c < discographyTiles.children.length; c += 1) {
-            discographyTiles.children[c].style.width = (100 / columsInDisc) + '%';
+        for (i = 0; i < discographyTiles.children.length; i += 1) {
+            discographyTiles.children[i].style.width = (100 / columsInDisc) + '%';
         }
 
         itemCounter = 0;
         colHiArr = [];
 
-        for (let c = 0; c < columsInDisc; c += 1) {
-            discographyTiles.children[c].appendChild(arrayOfDiscItems[c]);
+        for (i = 0; i < columsInDisc; i += 1) {
+            discographyTiles.children[i].appendChild(arrayOfDiscItems[i]);
             itemCounter += 1;
         }
 
-        for (let c = 0; c < columsInDisc && c < (arrayOfDiscItems.length - itemCounter); c += 1) {
-            colHiObj = new ColHiFunc(c, arrayOfColums[c].scrollHeight);
+        for (i = 0; i < columsInDisc && i < (arrayOfDiscItems.length - itemCounter); i += 1) {
+            colHiObj = new ColHiFunc(i, arrayOfColums[i].scrollHeight);
             colHiArr.push(colHiObj);
         }
 
@@ -497,14 +528,14 @@ function resizeDisc() {
 
         itemsLeft = arrayOfDiscItems.length - itemCounter;
 
-        for (let c = 0; c < itemsLeft; c += 1) {
+        for (i = 0; i < itemsLeft; i += 1) {
 
             putInColumn = colHiArr[0].col;
             discographyTiles.children[putInColumn].appendChild(arrayOfDiscItems[itemCounter]);
 
             colHiArr = [];
 
-            for (let x = 0; x < columsInDisc; x += 1) {
+            for (x = 0; x < columsInDisc; x += 1) {
                 colHiObj = new ColHiFunc(x, arrayOfColums[x].scrollHeight);
                 colHiArr.push(colHiObj);
             }
@@ -520,39 +551,32 @@ function resizeDisc() {
 
     if (windowWidth > 700 && windowWidth < 1050) {
 
-        let columsInDisc;
-        let itemCounter;
-        let colHiArr;
-        let colHiObj;
-        let itemsLeft;
-        let putInColumn;
-
         columsInDisc = 2;
 
-        for (let c = 0; c < discCols.length; c += 1) {
-            discCols[c].innerHTML = '';
+        for (i = 0; i < discCols.length; i += 1) {
+            discCols[i].innerHTML = '';
         }
 
         discographyTiles.innerHTML = '';
 
-        for (let c = 0; c < columsInDisc; c += 1) {
-            discographyTiles.appendChild(arrayOfColums[c]);
+        for (i = 0; i < columsInDisc; i += 1) {
+            discographyTiles.appendChild(arrayOfColums[i]);
         }
 
-        for (let c = 0; c < discographyTiles.children.length; c += 1) {
-            discographyTiles.children[c].style.width = (100 / columsInDisc) + '%';
+        for (i = 0; i < discographyTiles.children.length; i += 1) {
+            discographyTiles.children[i].style.width = (100 / columsInDisc) + '%';
         }
 
         itemCounter = 0;
         colHiArr = [];
 
-        for (let c = 0; c < columsInDisc; c += 1) {
-            discographyTiles.children[c].appendChild(arrayOfDiscItems[c]);
+        for (i = 0; i < columsInDisc; i += 1) {
+            discographyTiles.children[i].appendChild(arrayOfDiscItems[i]);
             itemCounter += 1;
         }
 
-        for (let c = 0; c < columsInDisc && c < (arrayOfDiscItems.length - itemCounter); c += 1) {
-            colHiObj = new ColHiFunc(c, arrayOfColums[c].scrollHeight);
+        for (i = 0; i < columsInDisc && i < (arrayOfDiscItems.length - itemCounter); i += 1) {
+            colHiObj = new ColHiFunc(i, arrayOfColums[i].scrollHeight);
             colHiArr.push(colHiObj);
         }
 
@@ -562,14 +586,14 @@ function resizeDisc() {
 
         itemsLeft = arrayOfDiscItems.length - itemCounter;
 
-        for (let c = 0; c < itemsLeft; c += 1) {
+        for (i = 0; i < itemsLeft; i += 1) {
 
             putInColumn = colHiArr[0].col;
             discographyTiles.children[putInColumn].appendChild(arrayOfDiscItems[itemCounter]);
 
             colHiArr = [];
 
-            for (let x = 0; x < columsInDisc; x += 1) {
+            for (x = 0; x < columsInDisc; x += 1) {
                 colHiObj = new ColHiFunc(x, arrayOfColums[x].scrollHeight);
                 colHiArr.push(colHiObj);
             }
@@ -584,27 +608,25 @@ function resizeDisc() {
     }
 
     if (windowWidth < 700) {
-
-        let columsInDisc;
         
         columsInDisc = 1;
 
-        for (let c = 0; c < discCols.length; c += 1) {
-            discCols[c].innerHTML = '';
+        for (i = 0; i < discCols.length; i += 1) {
+            discCols[i].innerHTML = '';
         }
 
         discographyTiles.innerHTML = '';
 
-        for (let c = 0; c < columsInDisc; c += 1) {
-            discographyTiles.appendChild(arrayOfColums[c]);
+        for (i = 0; i < columsInDisc; i += 1) {
+            discographyTiles.appendChild(arrayOfColums[i]);
         }
 
-        for (let c = 0; c < discographyTiles.children.length; c += 1) {
-            discographyTiles.children[c].style.width = (100 / columsInDisc) + '%';
+        for (i = 0; i < discographyTiles.children.length; i += 1) {
+            discographyTiles.children[i].style.width = (100 / columsInDisc) + '%';
         }
 
-        for (let c = 0; c < arrayOfDiscItems.length; c += 1) {
-            discographyTiles.children[0].appendChild(arrayOfDiscItems[c]);
+        for (i = 0; i < arrayOfDiscItems.length; i += 1) {
+            discographyTiles.children[0].appendChild(arrayOfDiscItems[i]);
         }
 
     }
@@ -806,7 +828,7 @@ var audioFiles = [
         dots: 23,
         start: 0,
         duration: '03:44',
-        title: 'Silhouettes: 3. Like Igor Stravinsky Crossed With Thelonious Monk'
+        title: 'Silhouettes: 3. Like Pierre Boulez Crossed With Oscar Peterson'
     },
     // 23
     {
@@ -814,7 +836,7 @@ var audioFiles = [
         dots: 16,
         start: 0,
         duration: '02:37',
-        title: 'Silhouettes: 4. Like Igor Stravinsky Crossed With Thelonious Monk'
+        title: 'Silhouettes: 4. Like Béla Bartók Crossed With Art Tatum'
     },
     // 24
     {
@@ -969,8 +991,8 @@ function timeUpdate() {
 
     if (playAudioPlayer.classList.contains('audioIsPlaying') && audio.currentTime > 0.5) {
 
-        let currentDotIndex;
-        let opacityAmount;
+        var currentDotIndex;
+        var opacityAmount;
 
         if (newFileLoaded === 1) {
 
@@ -1001,13 +1023,15 @@ function timeUpdate() {
 audio.addEventListener('timeupdate', timeUpdate, false);
 
 function setCurrentDot(startDot) {
+
+    var i;
     
-    for (var x = 0; x < startDot; x += 1) {
-        audioDotInnerBack[x].style.opacity = '0';
+    for (i = 0; i < startDot; i += 1) {
+        audioDotInnerBack[i].style.opacity = '0';
     }
 
-    for (var y = startDot; y < audioDotInnerBack.length; y += 1) {
-        audioDotInnerBack[y].style.opacity = '1';
+    for (i = startDot; i < audioDotInnerBack.length; i += 1) {
+        audioDotInnerBack[i].style.opacity = '1';
     }
 
 }
@@ -1026,6 +1050,8 @@ function dotClick(ind) {
 
     return function () {
 
+        var i;
+
         if (blockWhileLoading === 1) {
 
             dotPressPlayBlock = 1;
@@ -1033,11 +1059,12 @@ function dotClick(ind) {
             audio.currentTime = (ind * 10);
             audioPlayerClock.innerHTML = 'SEEKING';
 
-            for (var x = 0; x < ind; x += 1) {
-                audioDotInnerBack[x].style.opacity = '0';
+            for (i = 0; i < ind; i += 1) {
+                audioDotInnerBack[i].style.opacity = '0';
             }
-            for (var y = ind; y < audioDotInnerBack.length; y += 1) {
-                audioDotInnerBack[y].style.opacity = '1';
+
+            for (i = ind; i < audioDotInnerBack.length; i += 1) {
+                audioDotInnerBack[i].style.opacity = '1';
             }
 
             if (playAudioPlayer.classList.contains('audioIsPlaying')) {
@@ -1051,6 +1078,8 @@ function dotClick(ind) {
 }
 
 function launchAudioNext(fileNumber) {
+
+    var i;
     
     audio.pause();
 
@@ -1064,13 +1093,16 @@ function launchAudioNext(fileNumber) {
 
     audio.load();
 
-    for (let c = 0; c < dotsOuter.children.length; c += 1) {
-        dotsOuter.children[c].onclick = dotClick(c);
+    for (i = 0; i < dotsOuter.children.length; i += 1) {
+        dotsOuter.children[i].onclick = dotClick(i);
     }
 
 }
 
 function launchAudio(fileNumber) {
+
+    var numberOfDots;
+    var i;
 
     audio.volume = 0.5;
     audio.src = audioFiles[29].file; // 29 = inaudible file two_sec_silence.mp3
@@ -1085,10 +1117,10 @@ function launchAudio(fileNumber) {
 
     nowPlaying.innerHTML = '' + audioFiles[fileNumber].title + ' <span class="discDuration">' + audioFiles[fileNumber].duration + '</span>';
 
-    var numberOfDots = audioFiles[fileNumber].dots;
+    numberOfDots = audioFiles[fileNumber].dots;
     dotsOuter.innerHTML = '';
 
-    for (let c = 0; c < numberOfDots; c += 1) {
+    for (i = 0; i < numberOfDots; i += 1) {
         dotsOuter.innerHTML += '<div class="audioDotOutter"><div class="audioDotInner"><div class="audioDotInnerBack"></div></div></div>';
     }
 
