@@ -1,4 +1,4 @@
-## [nathanielbartlett.com](http://nathanielbartlett.com) source files
+## [nathanielbartlett.com](http://nathanielbartlett.com) SOURCE FILES
 ### WEBSITE ETHOS
 #### Fast
 * The website is ~1.2MB and will load in under 1s on a good connection.
