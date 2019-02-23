@@ -1,5 +1,4 @@
-## nathanielbartlett-dot-com
-**Files for [nathanielbartlett.com](http://nathanielbartlett.com)**
+## [nathanielbartlett.com](http://nathanielbartlett.com) SOURCE FILES
 ### WEBSITE ETHOS
 #### Fast
 * The website is ~1.2MB and will load in under 1s on a good connection.
