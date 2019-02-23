@@ -1,7 +1,7 @@
 ## [nathanielbartlett.com](http://nathanielbartlett.com) SOURCE FILES
 ### WEBSITE ETHOS
 #### Fast
-* The website is ~1.2MB and will load in under 1s on a good connection.
+* The website is ~1.5MB and will load in well under 1s on a good connection.
 * No irritating slow transitions, just snappy performance.
 #### Clean
 * The raw, minimal design does not detract from the main feature of the website: audio files.
