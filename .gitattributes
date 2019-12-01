@@ -2,3 +2,11 @@
 * text eol=lf
 * linguist-vendored
 *.js linguist-vendored=false
+*.pdf binary
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.otf binary
+*.ico binary
+*.jpg binary
