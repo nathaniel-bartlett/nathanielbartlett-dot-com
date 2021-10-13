@@ -97,7 +97,7 @@ body, html{
   float: right;
   position: relative;
   top: 0px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .sectionNumber {
@@ -107,7 +107,7 @@ body, html{
   left: 96px;
   font-size: 20px;
   line-height: 20px;
-  display: inline-block;
+  /* display: inline-block; */
   border: 5px solid #000000;
   border-radius: 50%;
   padding: 5px;
@@ -141,7 +141,7 @@ body, html{
   border: 2px solid #000000;
   color: #000000;
   text-decoration: none;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 2px 1px 2px;
 }
 
 .standardText a:hover {
@@ -215,6 +215,7 @@ body, html{
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   cursor: pointer;
+  caret-color: transparent; /* So a blinking cursor doesn't diplay when clicking */
 }
 
 #dogEarNav {
@@ -305,10 +306,11 @@ body, html{
   text-align: left;
   margin-left: 0px;
   font-weight: bold;
+  caret-color: transparent; /* So a blinking cursor doesn't diplay when clicking */
 }
 
 #menu-container {
-  /* margin: 0px 4px 0px 4px; */
+  margin: 0px 4px 0px 4px;
   max-width:640px;
   margin: auto;
 }
@@ -316,7 +318,9 @@ body, html{
 .menuNumber {
   background-color: #000000;
   color: #ffffff;
-  padding: 11px 12px 11px 7px;
+  padding: 11px 12px 13px 9px;
+  /* Mod the number above to fix android chrome issue */
+  /* Originally: padding: 11px 12px 11px 7px; */
   font-weight: bold;
 }
 
@@ -426,6 +430,7 @@ body, html{
   margin: 0px !important;
   text-align: center;
   vertical-align: top;
+  caret-color: transparent; /* So a blinking cursor doesn't diplay when clicking */
 }
 
 .toggleBarCellNest {
@@ -437,6 +442,7 @@ body, html{
   margin: 0px !important;
   text-align: center;
   vertical-align: top;
+  caret-color: transparent; /* So a blinking cursor doesn't diplay when clicking */
 }
 
 .fa-chevron-down, .fa-chevron-up, .fa-arrow-down, .fa-arrow-up {
@@ -508,17 +514,17 @@ body, html{
   border: 1px solid #000000;
   background-color: #000000;
   color: #ffffff;
-  padding: 3px 3px 3px 3px;
+  /* padding: 3px 3px 3px 3px; */
+  padding: 6px;
   border-radius: 50%;
-
 }
 
-.circleNumber2 {
+/* .circleNumber2 {
   border: 2px solid #000000;
   padding: 6px 2px 6px 2px;
   background-color: #ffffff;
   border-radius: 50%;
-}
+} */
 
 .disc-para a {
   border: 2px solid #000000;
