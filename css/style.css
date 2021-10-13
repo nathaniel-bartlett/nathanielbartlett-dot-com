@@ -319,8 +319,9 @@ body, html{
   background-color: #000000;
   color: #ffffff;
   padding: 11px 12px 13px 9px;
-  /* Mod the number above to fix android chrome issue */
-  /* Originally: padding: 11px 12px 11px 7px; */
+  margin-left: -2px;
+  /* Mod the padding and margin above to fix android chrome issue */
+  /* Originally: padding: 11px 12px 11px 7px; No margin setting */
   font-weight: bold;
 }
 
